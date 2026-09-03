@@ -1,0 +1,5 @@
+print("What is the order of the day?")
+day = int(input()) #must use int, input() always returns string
+x = "Monday" if day == 1 else "Tuesday" if day == 2 else "Wednesday" if day == 3 else "Thursday" if day == 4 else "Friday" if day == 5 else "Saturday" if day == 6 else "Sunday"
+
+print("Using my deduction skills, the day must be " + x + " then!")

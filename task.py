@@ -21,21 +21,26 @@ else:
 
 print("Enter a random plant, system will determine what it is.")
 
-plant = input()
+plant = input().lower()
 
-if (plant == "banana" or "apple" or "grapes" or "kiwi"):
+if plant in ("banana", "apple", "grapes", "kiwi"):
     print(plant + " is a fruit")
     print("Is it true?")
-    answer = input()
-    if not answer == "yes":
+    answer = input().lower()
+
+    if answer != "yes":
         print("It is true!!")
-elif (plant == "cucumber" or "carrot" or "pepper" or "brocolli"):
+
+elif plant in ("cucumber", "carrot", "pepper", "broccoli"):
     print(plant + " is a vegetable")
-elif (plant == "tomato" or "tomato"):
+
+elif plant == "tomato":
     print(plant + " is a vegetable")
-    print("is it true?")
-    answer1 = input()
-    if not answer1 == "no":
-        print("It is not true! tomato is a fruit!")
+    print("Is it true?")
+    answer1 = input().lower()
+
+    if answer1 != "no":
+        print("It is not true! Tomato is a fruit!")
+
 else:
     print("Unknown")
