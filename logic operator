@@ -1,6 +1,26 @@
 x = ["apple", "banana"]
 y = ["apple", "banana"]
 
+print("Would you like to check if x contains a fruit?")
+
+answeer = input().lower()
+
+if answeer == "yes":
+    print("Type your guess!")
+    fruit = input().lower()
+    print(fruit in x) #not in could also be used. this checks whether the fruit is inside x
+elif answeer == "no":
+    print("Would you like to check y instead?")
+    aanswer = input().lower()
+    if aanswer == "yes":
+        print("Type your guess!")
+        fruit = input().lower()
+        print(fruit in y)
+    elif aanswer == "no":
+        print("no result then")
+else:
+    print("invalid response")
+
 print("Would you like to find out if x and y are the same?")
 
 answer3 = input().lower()
