@@ -1,0 +1,38 @@
+list = ["cherry", "banana", "apple"] #have specific order, starting with index 0. adding a new item puts it at the end.
+print(list)
+print(len(list)) #prints the length of the list
+print(type(list)) #prints the type of the list
+
+x = ["cat", "bird", "dog"] #also makes a list
+
+x.insert(1, "kitty") #inserts an item into this index
+print(x)
+
+x.append("bunny") #add an item at the end
+print(x)
+
+y = ("puppy", "kitty", "turtle") #can be a list/tuple etc.
+x.extend(y)
+print(x) #extends the list
+
+print(x[1]) #will print bird, not cat!
+print(x[:1])
+print(x[-1])
+print(x[1:])
+print(x[0])
+
+if "cat" in x:
+    print("there is a cat")
+
+print("Wanna change x?")
+answer = input().lower()
+
+if answer == "yes":
+    x[1:2] = ["kitty", "neko"]
+    print(x)
+elif answer == "no":
+    x[0:2] = ["no", "isnt a", "response"]
+    print(x)
+else:
+    print("invalid response")
+
