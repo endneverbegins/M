@@ -1,3 +1,25 @@
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+
+print("Would you like to find out if x and y are the same?")
+
+answer3 = input().lower()
+if answer3 == "yes":
+    print(x is y)
+elif answer3 == "no":
+    print("No result")
+else:
+    print("Invalid response")
+
+print("Would you like to find out if x isnt the same as y?")
+answer4 = input().lower()
+
+if answer4 == "yes":
+    print(x is not y)
+elif answer4 == "no":
+    print("No Result")
+else:
+    print("Invalid response")
 
 print("Enter a number")
 x = int(input())
