@@ -1,0 +1,29 @@
+
+print("Enter a number")
+x = int(input())
+print("Would you like to check if the number is larger than 5 and smaller than 10?")
+answer = input().lower()
+if answer == "yes":
+    print(x > 5 and x < 10)
+elif answer == "no":
+    print("No result")
+else:
+    print("Invalid response")
+
+print("Would you like to check if the number is larger than 5 or smaller than 10?")
+answer1 = input().lower()
+if answer1 == "yes":
+    print(x > 5 or x <10)
+elif answer1 == "no":
+    print("No result")
+else:
+    print("Invalid response")
+
+print("Would you like to check if the number is NOT larger than 5 and smaller than 10?")
+answer2 = input().lower()
+if answer2 == "yes":
+    print(not(x > 5 and x < 10))
+elif answer2 == "no":
+    print("No result")
+else:
+    print("Invalid response")
