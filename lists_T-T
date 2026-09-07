@@ -15,6 +15,15 @@ y = ("puppy", "kitty", "turtle") #can be a list/tuple etc.
 x.extend(y)
 print(x) #extends the list
 
+c = ["kill", "your", "self"]
+c.remove("kill") #removes the specified item
+print(c)
+
+c.pop(1) #removes the item at the specified index
+print(c)
+
+del c #removes the entire list
+
 print(x[1]) #will print bird, not cat!
 print(x[:1])
 print(x[-1])
