@@ -1,0 +1,27 @@
+#  copy
+
+cute = ["katze", "hund", "schmeterling", "neko"]
+new1 = cute.copy() #copy method to copy
+print(new1)
+
+new2 = list(cute) #copy using list()
+print(new2)
+
+new3 = cute[:] #copy using slice : operator
+print(new3)
+
+#   join
+
+list1 = [1, 2, 3]
+list2 = ["a", "b", "c"]
+
+list3 = list1 + list2 #joins the 2 lists using +
+print(list3)
+
+for n in list1:
+    list2.append(n)
+
+print(list1) #joins the 2 lists using for
+
+list1.extend(list2) #joins the 2 lists using extend()
+print(list1) 

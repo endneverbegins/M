@@ -1,0 +1,13 @@
+idk = ["human", "witch", "elf", "cat", "katze", "mermaid"]
+idk.sort() #sorts it aphabetically
+print(idk)
+
+idk.sort(reverse=True) #sorts it reverse alphabetically
+print(idk)
+
+numbers = [50, 30, 100, 9, 2, 24, 67, 42, 4]
+numbers.sort() #from smallest -> biggest
+print(numbers)
+
+numbers.sort(reverse=True) #from biggest -> smallest
+print(numbers)
