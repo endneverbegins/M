@@ -1,0 +1,13 @@
+#create a list
+list = ["meow", "cat", "katze", "neko"]
+#print 1st item
+print(list[0])
+#change 2nd item
+list[1] = "yellow"
+#insert kat at the end
+list.insert(4, "kat")
+list.append("meow")
+#remove katze
+list.remove("katze")
+#print
+print(list)
