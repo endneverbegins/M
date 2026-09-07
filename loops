@@ -1,0 +1,14 @@
+fruits = ["cherry", "apple", "grapes"]
+for x in fruits:
+    print(x) #aka for each item print the item, includes apple
+    if x == "apple":
+        break
+
+for x in "kitty":
+    print(x) #prints each item (letter) one by one
+
+animals = ["kitty", "cat", "katze"]
+for n in animals:
+    if n == "cat":
+        break #breaks the loop before cat could get printed?
+    print(n)
