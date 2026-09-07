@@ -1,0 +1,15 @@
+animals = ["katze", "kitten", "cat", "koshka", "neko"]
+newlist = []
+
+for i in animals:
+    if "e" in i:
+        newlist.append(i) #for each item in animals, if the item contains "e", add it to newlist
+
+print(newlist)
+
+#OR!
+
+cute = ["kitty", "puppy", "bunny", "mouse"]
+anotherlist = [x for x in cute if "y" in x]
+
+print(anotherlist)
