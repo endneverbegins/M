@@ -1,0 +1,28 @@
+mytuple = ("apple", "banana", "cherry") #tuples are used to store multiple variables, a collection with an order and unchangeable
+print(mytuple)
+
+x = ("apple", "banana", "cherry") #workarounds to add tuples
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)
+
+thistuple = ("apple", "banana", "cherry")
+d = list(thistuple)
+d.append("orange")
+thistuple = tuple(d)
+
+thistuple1 = ("apple", "banana", "cherry")
+e = ("orange",)
+thistuple1 += e
+
+print(thistuple1)
+
+thistuple2 = ("apple", "banana", "cherry") #remove
+m = list(thistuple2)
+m.remove("apple")
+thistuple2 = tuple(y)
+
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists
