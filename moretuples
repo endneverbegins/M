@@ -1,0 +1,20 @@
+print("Enter costs for items in a tuple!")
+a = int(input("item1 = "))
+b = int(input("item2 = "))
+c = int(input("item3 = "))
+tuple1 = (a, b, c)
+print(tuple1)
+print("Assign names for the items")
+d = input("item1 = ")
+e = input("item2 = ")
+f = input("item3 = ")
+print("Write down the item and find its cost")
+answer = input("Item_Name = ")
+if answer == d:
+    print(a)
+elif answer == e:
+    print(b)
+elif answer == f:
+    print(c)
+else: 
+    print("invalid item")
