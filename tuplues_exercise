@@ -1,0 +1,42 @@
+print("lets make some tuples! Do you want to?")
+answer = input().lower()
+
+if answer == "yes":
+    print("enter variables! only 4 allowed")
+    a = input("a = ")
+    b = input("b = ")
+    c = input("c = ")
+    d = input("d = ")
+    tuple1 = (a, b, c, d)
+    print(tuple1)
+    print("Are you satisfied?")
+    answer1 = input().lower()
+    if answer1 == "yes":
+       print("done")
+    elif answer1 == "no":
+        print("Enter 1 to delete an item, Enter 2 to add an item")
+        answer2 = int(input())
+        if answer2 == 1:
+            print("Enter the index of the item you want to be removed")
+            index = int(input("index = "))
+            y = list(tuple1)
+            y.pop(index) #the mistake here! pop() removes based on index, remove() based on the item!
+            tuple1 = tuple(y)
+            print(tuple1)
+        elif answer2 == 2:
+            print("Enter the item you want added and its index")
+            item = input("item = ")
+            index = int(input("index = "))
+            x = list(tuple1)
+            x.insert(index, item)
+            tuple1 = tuple(x)
+            print(tuple1)
+        else:
+            print("Invalid response")
+elif answer == "no":
+    print("fuck off then")   
+else:
+    print("invalid response")     
+
+
+    
