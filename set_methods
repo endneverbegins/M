@@ -1,0 +1,21 @@
+set1 = {"cat", "kitty", "katze"}
+set2 = {"puppy", "dog", "hund", "katze"}
+set3 = {"frog", "jaba", "froggie"}
+
+set4 = set1.union(set2, set3) #creates a new set that has united both sets
+print(set4) #union lets you unite all data types
+
+set4 = set1 | set2 | set3 #creates a new set that has united both sets
+print(set4) # | is only for sets with sets
+
+set2.update(set1, set3) #changes the original.
+print(set2)
+
+#both union() and update() exclude duplicates
+
+
+set4 = set1.intersection(set2) #keeps only duplicates
+print(set4)
+
+set4 = set1 & set2
+print(set4)
