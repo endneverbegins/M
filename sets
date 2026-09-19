@@ -1,0 +1,46 @@
+myset = {"apple", "banana", "cherry", "banana"} #unordered, unchangeable except adding and removing items, unindexed, NO DUPLICATES!
+print(len(myset))
+print(myset)
+thisset = set(("apple", "banana", "meow"))
+print(type(myset))
+print(thisset)
+
+#ADDING AN ITEM TO SET
+
+set = {"apple", "cat", "meow"}
+set.add("katze")
+print(len(set))
+print(type(set))
+print(set)
+
+#add set to another set
+thisset.update(set)
+print(thisset)
+
+#removing items
+set.remove("cat") #if the item doesnt exist -> error
+print(set)
+
+set.discard("meow") #if the item doesnt exist -> no error
+print(set)
+
+set1 = {"meow", "paw", "tail"}
+x = set1.pop() #randomly removes an item and then returns it
+print(x)
+print(set1)
+
+set.clear() #empties it out
+print(set)
+
+del set
+print(set)
+
+for x in set1:
+    print(x)
+
+    
+#TYPES
+#LIST = collection which is ordered and changeable. ALLOWS DUPLICATE
+#TUPLE = collection which is ordered and unchangeable. ALLOWS DUPLICATE
+#SET = collection which is unordered, unindexable and unchangeable, but new items can be added nor removed. NO DUPLICATE
+#DICTIONARY = collection which is ordered and changeable. NO DUPLICATES
